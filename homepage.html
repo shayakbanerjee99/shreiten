@@ -102,24 +102,6 @@
             width: 18rem;
         }
         
-        @media screen and (min-width: 400px) {
-            .workshop-card-text {
-                font-size: 15px;
-            }
-        }
-        
-        @media screen and (max-width: 400px) {
-            .workshop-card-text {
-                font-size: 12px;
-            }
-            h3 {
-                font-size: 18px;
-            }
-            h5 {
-                font-size: 15px;
-            }
-        }
-        
         .bg-light-gray {
             background: #f1f1f1 !important;
         }
@@ -132,7 +114,6 @@
         
         .teacher-locator-city {
             background: #b3b3b3;
-            padding: 30px;
             margin-bottom: 20px;
             display: inline-block;
         }
@@ -142,7 +123,6 @@
         }
         
         .company-logo {
-            margin-right: 50px;
             margin-bottom: 50px;
             display: inline-block;
         }
@@ -170,6 +150,34 @@
         .horizontal-rule {
             background: #b3b3b3;
             height: 2px;
+        }
+        
+        @media screen and (min-width: 400px) {
+            .workshop-card-text {
+                font-size: 15px;
+            }
+            .teacher-locator-city {
+                padding: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .workshop-card-text {
+                font-size: 12px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 15px;
+            }
+            .teacher-locator-city {
+                padding: 0px;
+            }
+            #footer {
+                background: #213e50;
+                padding: 10px;
+            }
         }
     </style>
     <title>Shreiten</title>
@@ -267,7 +275,7 @@
                     <div class="card text-center">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">IOT-Azure workshop conducted in SRMIST</p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +283,7 @@
                     <div class="card text-center ">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">Dance Workshop by Vineet Biyani.</p>
                         </div>
                     </div>
                 </div>
@@ -283,7 +291,7 @@
                     <div class="card text-center">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">The Startup Path, by Rupendra Pra...</p>
                         </div>
                     </div>
                 </div>
@@ -300,17 +308,17 @@
             </h3>
 
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 justify-content-md-center col-sm-6 col-6 d-inline-flex">
                     <div class="card teacher-locator-city">
                         <img class="card-img-top" src="assets/chennai_clipart.svg" />
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 justify-content-md-center col-sm-6 col-6 d-inline-flex">
                     <div class="card teacher-locator-city">
                         <img class="card-img-top" src="assets/jaipur_clipart.svg" />
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 justify-content-md-center col-sm-6 col-6 d-inline-flex">
                     <div class="card teacher-locator-city">
                         <img class="card-img-top" src="assets/mumbai_clipart.svg" />
                     </div>
@@ -324,43 +332,39 @@
                 <h5 style="color: #4d4d4d">WITH OUR PARTNERS</h5>
             </div>
 
-            <div class="row" style="padding-bottom: 50px;">
-                <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4 col-6">
                     <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <div class="company-logo">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="company-logo">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="company-logo">
+                        <img class="img-fluid" src="assets/company_logo_placeholder.svg">
                     </div>
                 </div>
             </div>
-
-            <div class="row" style="padding-bottom: 50px;">
-                <div class="col-md-4">
-                    <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="company-logo">
-                        <img src="assets/company_logo_placeholder.svg">
-                    </div>
-                </div>
-            </div>
-
-
         </div>
     </div>
 
@@ -369,7 +373,7 @@
 
         <div id="footer-container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <h3>COMPANY</h3>
                     <p><a>About us</a></p>
                     <p><a>Investor Relations</a></p>
@@ -377,12 +381,12 @@
                     <p><a>Terms of Service</a></p>
                     <p><a>Privacy Policy</a></p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <h3>CONTACT US</h3>
                     <p>9784371098</p>
                     <p>3061, Estancia,<br>Guduvanchery,<br>Kancheepuram DT - 603203,<br> Tamil Nadu,<br>India</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <h3>FOLLOW US</h3>
                     <img src="assets/images/ltst-img-1.jpg" class="rounded-circle">
                     <img src="assets/images/ltst-img-1.jpg" class="rounded-circle">
