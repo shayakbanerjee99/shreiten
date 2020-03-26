@@ -92,9 +92,32 @@
             font-family: 'Montserrat', 'sans-serif';
         }
         
-        .workshop-card {
+        .workshop-card-container {
             margin-top: 20px;
             margin-bottom: 20px;
+            max-width: 100%;
+        }
+        
+        .workshop-card {
+            width: 18rem;
+        }
+        
+        @media screen and (min-width: 400px) {
+            .workshop-card-text {
+                font-size: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .workshop-card-text {
+                font-size: 12px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 15px;
+            }
         }
         
         .bg-light-gray {
@@ -110,6 +133,7 @@
         .teacher-locator-city {
             background: #b3b3b3;
             padding: 30px;
+            margin-bottom: 20px;
             display: inline-block;
         }
         
@@ -119,6 +143,7 @@
         
         .company-logo {
             margin-right: 50px;
+            margin-bottom: 50px;
             display: inline-block;
         }
         
@@ -238,27 +263,27 @@
             <h3>WORKSHOPS</h3>
 
             <div class="row">
-                <div class="col-lg workshop-card">
-                    <div class="card text-center" style="width: 18rem;">
+                <div class="col-sm-4 col-6 workshop-card-container">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg workshop-card">
-                    <div class="card text-center" style="width: 18rem;">
+                <div class="col-sm-4 col-6 workshop-card-container">
+                    <div class="card text-center ">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg workshop-card block-center">
-                    <div class="card text-center" style="width: 18rem;">
+                <div class="col-sm-4 col-6 workshop-card-container block-center">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
                         <div class="card-body bg-light-gray">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text workshop-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
@@ -275,19 +300,19 @@
             </h3>
 
             <div class="row">
-                <div class="col-lg">
-                    <div class="teacher-locator-city">
-                        <img src="assets/chennai_clipart.svg" />
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card teacher-locator-city">
+                        <img class="card-img-top" src="assets/chennai_clipart.svg" />
                     </div>
                 </div>
-                <div class="col-lg">
-                    <div class="teacher-locator-city">
-                        <img src="assets/jaipur_clipart.svg" />
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card teacher-locator-city">
+                        <img class="card-img-top" src="assets/jaipur_clipart.svg" />
                     </div>
                 </div>
-                <div class="col-lg">
-                    <div class="teacher-locator-city">
-                        <img src="assets/mumbai_clipart.svg" />
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card teacher-locator-city">
+                        <img class="card-img-top" src="assets/mumbai_clipart.svg" />
                     </div>
                 </div>
             </div>
@@ -296,7 +321,7 @@
         <div id="internships-section">
             <div class="section-heading">
                 <h3>INTERNSHIPS</h3>
-                <h2 style="font-size: 20px; color: #4d4d4d">WITH OUR PARTNERS</h2>
+                <h5 style="color: #4d4d4d">WITH OUR PARTNERS</h5>
             </div>
 
             <div class="row" style="padding-bottom: 50px;">
@@ -380,13 +405,23 @@
             var navbarHeight = $(".navbar").outerHeight();
             $("body").css("padding-top", navbarHeight);
 
-            // resizing the hero-image for mobile devices
+            // resizing for mobile devices
             var windowHeight = $(window).height();
             if (windowHeight < 500) {
+                // hero image mobile view resize
                 $(".hero-image").css("height", 300);
+
+                // workshop card mobile view resize
+                $(".workshop-card").css("style", "width: 13rem;");
+                $(".workshop-card-text").html = "hello";
             } else {
+                // hero image web view
                 $(".hero-image").css("height", 500);
+
+                // workshop card web view 
+                $(".workshop-card").css("style", "width: 18rem;");
             }
+
         }
 
         $(window).resize(onResize);
