@@ -1,293 +1,297 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .navbar-right {
+            float: right;
+        }
+        
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+        }
+        
+        #navbar {
+            background-color: #305b76;
+        }
+        
+        .hero-image {
+            text-align: center;
+            width: 100%;
+            height: 500px;
+            background: url('OuRIAf.jpg');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+        
+        .hero-text {
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            display: block;
+        }
+        
+        #study-materials-section {
+            min-height: 300px;
+            padding: 50px;
+            background: #305b76;
+            color: white;
+        }
+        
+        .section-heading {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        .exam-block {
+            background: #22437f;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .exam-block:hover {
+            background: #334e81;
+            cursor: pointer;
+        }
+        
+        #workshops-section {
+            background: #e6e6e6;
+            min-height: 480px;
+            padding: 50px;
+            font-family: 'Montserrat', 'sans-serif';
+        }
+        
+        .workshop-card {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .bg-light-gray {
+            background: #f1f1f1 !important;
+        }
+        
+        #teacher-locator-section {
+            background: #cccccc;
+            min-height: 400px;
+            padding: 50px;
+        }
+        
+        #teacher-locator-section h3 {
+            font-family: 'Montserrat';
+            margin-bottom: 50px;
+        }
+        
+        .teacher-locator-city {
+            background: #b3b3b3;
+            padding: 30px;
+            display: inline-block;
+        }
+    </style>
     <title>Shreiten</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.ico">
-
-    <!--Google Font link-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/iconfont.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/bootsnav.css">
-
-
-    <!--For Plugins external css-->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
-
-    <!--Theme custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
-
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-menu" data-offset="110">
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+            <a href="#" class="navbar-brand"><img src="logo.png" /></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-    <!-- Preloader -->
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
-            </div>
-        </div>
-    </div>
-    <!--End off Preloader -->
-
-
-    <div class="culmn">
-        <!--Home page style-->
-
-
-        <nav class="navbar navbar-default bootsnav navbar-fixed no-background white" style="padding-bottom: 15px;">
-            <!-- Start Top Search -->
-            <div class="top-search">
-                <div class="container">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Profile</a>
+                    <a href="#" class="nav-item nav-link">Messages</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                </div> -->
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link">STUDY MATERIALS</a>
+                    <a href="#" class="nav-item nav-link">INTERNSHIPS</a>
+                    <a href="#" class="nav-item nav-link">WORKSHOPS</a>
+                    <a href="#" class="nav-item nav-link">TEACHER LOCATOR</a>
                 </div>
             </div>
-            <!-- End Top Search -->
-
-
-            <div class="container">
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    <a class="navbar-brand" id="shreiten" href="#brand">
-                        <img src="assets/images/shreiten-logo.jpg" class="logo" style="width: 205px; height: 50px;">
-
-                        <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
-                    </a>
-
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- navbar menu -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#study-materials">STUDY MATERIALS</a></li>
-                        <li><a href="#contact">INTERNSHIPS</a></li>
-                        <li><a href="">WORKSHOPS</a></li>
-                        <li><a href="#teacher-locator">TEACHER LOCATOR</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-
         </nav>
+    </div>
 
-        <!--Home Sections-->
-        <section id="home" class="home bg-black fix">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_home">
-                        <div class="col-md-12">
-                            <div class="hello_slid">
-                                <div class="slid_item xs-text-center">
-                                    <div class="col-sm-8">
-                                        <div class="home_text xs-m-top-30">
-                                            <h2 class="text-white">Welcome to <strong>shreiten.com</strong></h2>
-                                            <h1 class="text-white">Walk towards progress</h1>
-                                            <!-- <h3 class="text-white"> We Create a <strong>Difference</strong> in education </h3> -->
-                                            <br>
-                                            <h4 class="text-white">This site is under maintenance</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End off slid item -->
+    <div id="container">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End off row-->
+        <div class="hero-image">
+            <div class="hero-text">
+                <p style="margin-bottom: 0;">YOUR GUIDE TOWARDS</p>
+                <p style="font-size:50px; line-height: 1;">PROGRESS</p>
             </div>
-            <!--End off container -->
-        </section>
-        <!--End off Home Sections-->
-
-        <!--Business Section-->
-        <section id="business" class="business bg-blue roomy-70">
-            <div class="business_overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_business">
-                        <div class="col-md-12" style="padding: 100px 50px 100px 50px">
-                            <div class="business_item sm-m-top-50">
-                                <h1 class="text-uppercase text-white"><strong>About</strong> us</h1>
-
-                                <p class="m-top-20 text-white" style="font-size: 20px;">Shreiten is an educational tool that connects teachers and students, and is assimilated into a social network. In this one, teachers can create online collaborative groups, administer and provide educational materials,
-                                    measure student performance, and communicate with parents, among other functions. We have the best of teachers connected with us and ties with the best of the institutions in India.</p>
-
-                                <!-- <ul class="text-white">
-                                        <li><i class="fa fa-arrow-circle-right"></i> Clean & Modern Design</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Fully Responsive</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Google Fonts</li>
-                                    </ul> -->
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End off Business section -->
-
-
-
-        <footer id="contact" class="footer action-lage bg-black p-top-80">
-            <!--<div class="action-lage"></div>-->
-            <div class="container">
-                <div class="row">
-                    <div class="widget_area">
-                        <div class="col-md-3">
-                            <div class="widget_item widget_about">
-                                <!-- <h5 class="text-white">About Us</h5>
-                                    <p class="m-top-20">Shreiten is an educational tool that 
-                                        connects teachers and students, and is assimilated into 
-                                        a social network.   In this one, teachers can create online 
-                                        collaborative groups, administer and provide educational 
-                                        materials, measure student performance, and communicate 
-                                        with parents, among other functions. We have the best of 
-                                        teachers connected with us and ties with the best of the 
-                                        institutions in India</p> -->
-
-                                <!-- Location -->
-
-                                <!-- <div class="widget_ab_item m-top-30">
-                                        <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
-                                        <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Location</h6>
-                                            <p>
-                                                123 suscipit ipsum nam auctor
-                                                mauris dui, ac sollicitudin mauris,
-                                                Bandung</p>
-                                        </div>
-                                    </div> -->
-
-                                <h5 class="text-white text-uppercase">Contact</h5>
-
-                                <div class="widget_ab_item m-top-40">
-                                    <div class="item_icon"><i class="fa fa-phone"></i></div>
-                                    <div class="widget_ab_item_text">
-                                        <h6 class="text-white">Phone :</h6>
-                                        <p>+91 97843 71098</p>
-                                        <p>+91 97845 91744</p>
-                                    </div>
-                                </div>
-                                <div class="widget_ab_item m-top-30">
-                                    <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
-                                    <div class="widget_ab_item_text">
-                                        <h6 class="text-white">Email Address :</h6>
-                                        <p>shreiten@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End off widget item -->
-                        </div>
-                        <!-- End off col-md-3 -->
-
-                        <!-- Latest news  -->
-                        <!-- <div class="col-md-3">
-                                <div class="widget_item widget_latest sm-m-top-50">
-                                    <h5 class="text-white">Latest News</h5>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-1.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-2.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-3.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="widget_item widget_service sm-m-top-50">
-                                    <h5 class="text-white">Latest News</h5>
-                                    <ul class="m-top-10">
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> this site is under construction</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            
-                        </div> -->
-                    </div>
-                </div>
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
-                    <div class="col-md-12">
-                        <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made by Shreiten
-                        </p>
-                    </div>
-                </div>
-        </footer>
-
-
-
-
         </div>
 
-        <!-- JS includes -->
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
+        <!-- Upcoming Exams Study Materials-->
+        <div id="study-materials-section">
+            <h4 class="section-heading">STUDY MATERIALS FOR UPCOMING EXAMS</h4>
 
 
 
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
 
+            <!-- blocks of upcoming exams -->
+            <div class="exam-blocks">
+                <a>
+                    <div class="exam-block">BITSAT</div>
+                </a>
+                <a>
+                    <div class="exam-block">SRMJEE</div>
+                </a>
+                <a>
+                    <div class="exam-block">GRE</div>
+                </a>
+                <a>
+                    <div class="exam-block">MANIPAL</div>
+                </a>
+                <a>
+                    <div class="exam-block">CBSE 12th</div>
+                </a>
+                <a>
+                    <div class="exam-block">CLAT</div>
+                </a>
+                <a>
+                    <div class="exam-block">UP Board 10th</div>
+                </a>
+                <a>
+                    <div class="exam-block">NEET</div>
+                </a>
+                <a>
+                    <div class="exam-block">NIFT Entrance Exam</div>
+                </a>
+                <a>
+                    <div class="exam-block">SAT</div>
+                </a>
+                <a>
+                    <div class="exam-block">JEE Mains</div>
+                </a>
+                <a>
+                    <div class="exam-block">JEE Advanced</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="workshops-section">
+
+            <h3>WORKSHOPS</h3>
+
+            <div class="row">
+                <div class="col-lg workshop-card">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
+                        <div class="card-body bg-light-gray">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg workshop-card">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
+                        <div class="card-body bg-light-gray">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg workshop-card block-center">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/image_cap.svg" alt="Card image cap">
+                        <div class="card-body bg-light-gray">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a style="font-family: 'Montserrat', sans-serif; color: #305b76" href="">view more...</a>
+            </div>
+        </div>
+
+        <div id="teacher-locator-section">
+            <h3>
+                <span class="material-icons">search</span> TEACHER LOCATOR
+            </h3>
+
+            <div class="row">
+                <div class="col-lg">
+                    <div class="teacher-locator-city">
+                        <img src="assets/chennai_clipart.svg" />
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="teacher-locator-city">
+                        <img src="assets/jaipur_clipart.svg" />
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="teacher-locator-city">
+                        <img src="assets/mumbai_clipart.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // resizing the body padding-top so that the navbar doesn't hide the hero area
+        var onResize = function() {
+            var navbarHeight = $(".navbar").outerHeight();
+            $("body").css("padding-top", navbarHeight);
+
+            // resizing the hero-image for mobile devices
+            var windowHeight = $(window).height();
+            if (windowHeight < 500) {
+                $(".hero-image").css("height", 300);
+            } else {
+                $(".hero-image").css("height", 500);
+            }
+        }
+
+        $(window).resize(onResize);
+
+        $(function() {
+            onResize();
+        });
+    </script>
 </body>
 
 </html>
