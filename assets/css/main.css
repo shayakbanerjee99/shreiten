@@ -52,7 +52,7 @@
     background: #22437f;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -132,6 +132,39 @@
 .horizontal-rule {
     background: #b3b3b3;
     height: 2px;
+}
+
+
+/*STUDY MATERIALS*/
+
+#upcoming-exams-section {
+    background: #f3f3f3;
+    padding: 50px;
+}
+
+#recently-added-material-section {
+    background: #b3b3b3;
+    padding: 50px;
+}
+
+.recently-added-item {
+    background: white;
+    display: inline-block;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+#search-by-name-section {
+    padding: 50px;
+    background: #eeeeee;
+    border-top: 2px solid #334e81;
+}
+
+#search-by-name-section a {
+    color: #334e81;
 }
 
 @media screen and (min-width: 400px) {
