@@ -167,6 +167,56 @@
     color: #334e81;
 }
 
+#exam-name-heading {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background: #e6e6e6;
+}
+
+#previous-years-papers {
+    padding: 50px;
+    background: #f3f3f3;
+}
+
+#previous-years-papers h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.exam-paper {
+    color: #334e81;
+    cursor: pointer;
+}
+
+.exam-paper:hover {
+    text-decoration: underline;
+}
+
+#chapter-wise-material {
+    background: #e6e6e6;
+    padding: 50px;
+}
+
+#chapter-wise-material a {
+    margin-bottom: 10px;
+    display: block;
+    max-width: 600px;
+}
+
+#chapter-wise-material a div:hover {
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+#chapter-wise-material img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
 @media screen and (min-width: 400px) {
     .workshop-card-text {
         font-size: 15px;
@@ -182,6 +232,10 @@
     }
     h3 {
         font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
     }
     h5 {
         font-size: 15px;
