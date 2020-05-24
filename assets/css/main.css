@@ -259,6 +259,23 @@ a {
     color: white;
 }
 
+#teacher-info {
+    padding: 50px;
+    background: #e2e2e2;
+}
+
+#teacher-info img {
+    min-width: 100px;
+    min-height: 100px;
+    display: inline-block;
+}
+
+#teacher-info h3 {
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+}
+
 @media screen and (min-width: 400px) {
     .workshop-card-text {
         font-size: 15px;
